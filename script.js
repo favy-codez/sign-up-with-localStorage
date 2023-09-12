@@ -1,21 +1,16 @@
-let userName = document.getElementById("userName");
-let email = document.getElementById("email");
-let password = document.getElementById("password");
+let userName = document.getElementById("userName").value;
+let email = document.getElementById("email").value;
+let password = document.getElementById("password").value;
 
 let users = {
     userName: userName,
-    mail: email,
+    email: email,
     password: password
 }
 
 function addData(e) {
-    
-        
-
-        
-
-        e.preventDefault();
-       localStorage.setItem(('users', JSON.stringify(users)))
+    e.preventDefault();
+    localStorage.setItem('users', (JSON.stringify(users)))
         
 }
 
