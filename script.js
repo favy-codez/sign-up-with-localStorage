@@ -1,12 +1,12 @@
 let userName = document.getElementById("userName");
 let email = document.getElementById("email");
-        let password = document.getElementById("password");
+let password = document.getElementById("password");
 
-        let users = {
-            userName: userName,
-            email: email,
-            password: password
-        }
+let users = {
+    userName: userName,
+    mail: email,
+    password: password
+}
 
 function addData(e) {
     
@@ -15,7 +15,7 @@ function addData(e) {
         
 
         e.preventDefault();
-       localStorage.getItem(('users', JSON.stringify(users)))
+       localStorage.setItem(('users', JSON.stringify(users)))
         
 }
 
