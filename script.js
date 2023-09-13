@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let signUpForm = document.getElementById("sign-up-form");
     let loginForm = document.getElementById("log-in-form");
 
-
+    // sign up form
     signUpForm.addEventListener("submit", function(e){
         e.preventDefault();
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Clear signup form
         signUpForm.reset();
-    })
+    });
 
     // login Form
     loginForm.addEventListener("submit", function(e){
@@ -35,8 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if(correctUserName === null){
             alert("email NOT FOUND!!!");
-        }else if(correctPassword === null){
-            alert("PASSWORD EMPTY");
         }else if(password === correctPassword){
             alert("Log in Sucessful!!!")
         }else{
@@ -45,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     loginForm.reset();
-}
+});
 
 
 
